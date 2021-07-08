@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Histograma sobre cantidad de aerolineas (opciones para viajar) por aeropuerto del grafo G</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js" integrity="sha384-T2yuo9Oe71Cz/I4X9Ac5+gpEa5a8PpJCDlqKYO0CfAuEszu1JrXLl8YugMqYe3sM" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="4afe753b-4b89-4927-86ae-76b619c7bc35" data-root-id="3758"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3853">
+          {"a49e20b1-2d25-4b2a-a282-d0c47f0783c9":{"roots":{"references":[{"attributes":{"axis_label":"Cantidad de vertices","formatter":{"id":"3787"},"ticker":{"id":"3774"}},"id":"3773","type":"LinearAxis"},{"attributes":{},"id":"3770","type":"BasicTicker"},{"attributes":{"bottom":{"value":0},"fill_alpha":{"value":0.5},"fill_color":{"value":"navy"},"left":{"field":"left"},"line_alpha":{"value":0.5},"line_color":{"value":"white"},"right":{"field":"right"},"top":{"field":"top"}},"id":"3779","type":"Quad"},{"attributes":{"axis":{"id":"3769"},"grid_line_color":"white","ticker":null},"id":"3772","type":"Grid"},{"attributes":{},"id":"3774","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto"},"id":"3777","type":"Toolbar"},{"attributes":{},"id":"3788","type":"Selection"},{"attributes":{},"id":"3789","type":"UnionRenderers"},{"attributes":{"text":"Histograma sobre cantidad de aerolineas (opciones para viajar) por aeropuerto del grafo G"},"id":"3759","type":"Title"},{"attributes":{"source":{"id":"3778"}},"id":"3782","type":"CDSView"},{"attributes":{"axis":{"id":"3773"},"dimension":1,"grid_line_color":"white","ticker":null},"id":"3776","type":"Grid"},{"attributes":{},"id":"3765","type":"LinearScale"},{"attributes":{},"id":"3761","type":"DataRange1d"},{"attributes":{"background_fill_color":"#fafafa","below":[{"id":"3769"}],"center":[{"id":"3772"},{"id":"3776"}],"left":[{"id":"3773"}],"renderers":[{"id":"3781"}],"title":{"id":"3759"},"toolbar":{"id":"3777"},"x_range":{"id":"3761"},"x_scale":{"id":"3765"},"y_range":{"id":"3763"},"y_scale":{"id":"3767"}},"id":"3758","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"3778"},"glyph":{"id":"3779"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3780"},"selection_glyph":null,"view":{"id":"3782"}},"id":"3781","type":"GlyphRenderer"},{"attributes":{"axis_label":"Aerolineas por vertice","formatter":{"id":"3785"},"ticker":{"id":"3770"}},"id":"3769","type":"LinearAxis"},{"attributes":{},"id":"3785","type":"BasicTickFormatter"},{"attributes":{"data":{"left":{"__ndarray__":"AAAAAAAA8D9mZmZmZmYiQGZmZmZmZjFAmZmZmZmZOUBmZmZmZuZAQAAAAAAAAEVAmZmZmZkZSUAyMzMzMzNNQGZmZmZmplBAMzMzMzOzUkA=","dtype":"float64","order":"little","shape":[10]},"right":{"__ndarray__":"ZmZmZmZmIkBmZmZmZmYxQJmZmZmZmTlAZmZmZmbmQEAAAAAAAABFQJmZmZmZGUlAMjMzMzMzTUBmZmZmZqZQQDMzMzMzs1JAAAAAAADAVEA=","dtype":"float64","order":"little","shape":[10]},"top":[1037,83,24,8,3,3,1,2,0,2]},"selected":{"id":"3788"},"selection_policy":{"id":"3789"}},"id":"3778","type":"ColumnDataSource"},{"attributes":{"bottom":{"value":0},"fill_alpha":{"value":0.1},"fill_color":{"value":"navy"},"left":{"field":"left"},"line_alpha":{"value":0.1},"line_color":{"value":"white"},"right":{"field":"right"},"top":{"field":"top"}},"id":"3780","type":"Quad"},{"attributes":{"start":0},"id":"3763","type":"DataRange1d"},{"attributes":{},"id":"3787","type":"BasicTickFormatter"},{"attributes":{},"id":"3767","type":"LinearScale"}],"root_ids":["3758"]},"title":"Bokeh Application","version":"2.2.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3853').textContent;
+                  var render_items = [{"docid":"a49e20b1-2d25-4b2a-a282-d0c47f0783c9","root_ids":["3758"],"roots":{"3758":"4afe753b-4b89-4927-86ae-76b619c7bc35"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
